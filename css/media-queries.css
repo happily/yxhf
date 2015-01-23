@@ -1,0 +1,13 @@
+/* CSS Document */
+@media screen and (max-width: 480px) {
+.header .title,.sec-imgTitle{
+    font-size:20px;
+}
+.splash-bg img{width:638px; height:617px;}
+.contact-bg img{
+	width:640px; height:945px;
+	}
+.srollPic img{width:640px; height:945px;}
+.space-panel .sec-imgBox{ width:100%;}
+.sec-imgTitle{ height:40px; line-height:40px; font-size:20px;}
+}

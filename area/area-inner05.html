@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>燕西华府-区域</title>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta name="viewport" content="width=device-width; initial-scale=1.0;minimum-scale=1.0; maximum-scale=2.0"/>
+<meta name="MobileOptimized" content="240"/>
+<link rel="stylesheet" href="../css/layout.css" type="text/css">
+<link rel="stylesheet" href="../css/media-queries.css" type="text/css" media="screen">
+<script src="../js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="../js/main.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="warp">
+	<!--header start-->
+	<div class="header">
+		<h1 class="title">区域</h1>
+	</div>
+	<!--header end-->
+	<!--main start-->
+    <div class="main">
+    	<div class="section">
+			<div class="sec-imgBox pos-r margin0-b">
+				<div><img src="../images/area/img-01-05.jpg"></div>
+				<div class="sec-imgTitle">交通配套</div>
+			</div>
+			<ul class="sec-sortList">
+				<li><a href="area-inner05-01.html">区域交通</a></li>
+				<li><a href="area-inner05-02.html">人大附中丰台学校</a></li>
+				<li><a href="area-inner05-03.html">青龙湖国际文化会都</a></li>
+				<li><a href="area-inner05-04.html">医疗系统</a></li>
+			</ul>
+        </div>
+	</div>
+	<!--main end-->
+	<!--footer start-->
+	<div class="footer">
+		<div class="bottombar">
+			<ul class="f_ul_list">
+				<li><a href="#"><span class="ico-footer-home"></span></a></li>
+				<li id="footerMenu" class="pos-r">
+				<a href="#"><span class="ico-footer-setting"></span></a>
+				<div class="pos-a footer-menu">
+					<ul class="footer-menu-ul">
+						<li><a href="../news/news.html">新闻资讯</a></li>
+						<li><a href="../contact-us/contact-us.html">联系我们</a></li>
+					</ul>
+				</div>
+				</li>
+				<li><a href="#"><span class="ico-footer-back"></span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--footer end-->
+</div>
+</body>
+<script type="text/javascript">
+	var lis=$(".sec-imgBox");
+	for(var i = 0;i<lis.length;i++){
+		if(i%2 == 0){
+			lis.eq(i).css({"right":"1000px"});
+			lis.eq(i).animate({"right":"0px"},200*i+1000,"swing");
+		}else{
+			lis.eq(i).css({"left":"1000px"});
+			lis.eq(i).animate({"left":"0px"},200*i+1000,"swing");
+		}
+	}
+</script>
+</html>
