@@ -98,7 +98,7 @@ img {
 .sec-imgTitle div{padding-left:30px}
 .sec-imgTitle span{ padding-right:30px; font-size:26px;}
 .sec-titleBox h2{font-size:32px; color:#960000; text-align:center;  margin-bottom: 10px;}
-.sec-sortList{background:#1a1710; overflow:hidden; padding:50px;}
+.sec-sortList{background:#1a1710; overflow:hidden; padding:10%;}
 .sec-sortList li{width:50%; float:left;}
 .sec-sortList li a{color:#fff; font-size:20px;background:#875b2a; height:59px; line-height:59px; text-align:center; margin:10px 12px; display:block; font-weight:bold;}
 .sec-textDiv{ margin-bottom:40px;}
