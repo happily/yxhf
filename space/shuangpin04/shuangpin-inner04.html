@@ -10,23 +10,29 @@
 <link rel="stylesheet" href="../../css/media-queries.css" type="text/css" media="screen">
 <script src="../../js/jquery-1.10.1.min.js" type="text/javascript"></script>
 <script src="../../js/main.js" type="text/javascript"></script>
+<script src="../../js/scroll.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="warp">
 	
 	<!--main start-->
 	<div class="main">
-		<div id="divADBox" class="pos-r srollPic">
-			<img id="img01" src="../../images/space/shuangpin/images/img-04-01.jpg">
-			<img id="img01" src="../../images/space/shuangpin/images/img-04-02.jpg">
-			<img id="img01" src="../../images/space/shuangpin/images/img-04-03.jpg">
-			<img id="img01" src="../../images/space/shuangpin/images/img-04-04.jpg">
-			<img id="img01" src="../../images/space/shuangpin/images/img-04-05.jpg">
-			<img id="img01" src="../../images/space/shuangpin/images/img-04-06.jpg">
-			<img id="img01" src="../../images/space/shuangpin/images/img-04-07.jpg">
-			<div class="icon-arrow"><img src="../../images/space/icon-arrow.png" height="24" width="132" style="height:24px; width:132px;"></div>
+        <div class="srollPic">
+		<div class="scroll">
+			<div class="slide_01" id="slide_01">
+				<div class="mod_01"><a href="#"><img src="../../images/space/shuangpin/images/img-04-01.jpg"></a></div>
+				<div class="mod_01"><a href="#"><img src="../../images/space/shuangpin/images/img-04-02.jpg"></a></div>
+				<div class="mod_01"><a href="#"><img src="../../images/space/shuangpin/images/img-04-03.jpg"></a></div>
+				<div class="mod_01"><a href="#"><img src="../../images/space/shuangpin/images/img-04-04.jpg"></a></div>
+				<div class="mod_01"><a href="#"><img src="../../images/space/shuangpin/images/img-04-05.jpg"></a></div>
+				<div class="mod_01"><a href="#"><img src="../../images/space/shuangpin/images/img-04-06.jpg"></a></div>
+				<div class="mod_01"><a href="#"><img src="../../images/space/shuangpin/images/img-04-07.jpg"></a></div>
+			</div>
+			<div class="dotModule_new" style="display:none">
+				<div id="slide_01_dot"></div>
+			</div>
 		</div>
-		
+		</div>
 	</div>
 	<!--main end-->
 	<!--footer start-->
@@ -49,5 +55,44 @@
 	</div>
 	<!--footer end-->
 </div>
+<div class="icon-arrow"><img src="../../images/space/icon-arrow.png" height="24" width="132" style="height:24px; width:132px;"></div>
+<script type="text/javascript">  
+    $(function(){  
+  
+    var _width,   
+        _height;  
+    doDraw();  
+      
+    window.onresize = function(){  
+        doDraw();  
+    }  
+    function doDraw(){  
+    
+        if(_width==window.innerWidth) return;
+        _width = window.innerWidth;  
+        _height = window.innerHeight;  
+      
+        $(".scroll img,.mod_01").attr("style","width:"+_width+"px;height:"+_height+"px");
+        if(document.getElementById("slide_01")){
+    		var slide_01 = new ScrollPic();
+    		slide_01.pageIndex=0;
+    		slide_01.scrollContId   = "slide_01"; //内容容器ID
+    		slide_01.dotListId      = "slide_01_dot";//点列表ID
+    		slide_01.dotOnClassName = "selected";
+    		slide_01.arrLeftId      = "sl_left"; //左箭头ID
+    		slide_01.arrRightId     = "sl_right";//右箭头ID
+    		slide_01.frameWidth     = _width;
+    		slide_01.pageWidth      = _width;
+    		slide_01.upright        = false;
+    		slide_01.speed          = 10;
+    		slide_01.space          = 30; 
+    		slide_01.initialize(); //初始化
+    } 
+        $(".mod_01").parents("div").addClass("w");
+  }  
+      
+         
+ })  
+   </script> 
 </body>
 </html>

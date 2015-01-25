@@ -51,8 +51,8 @@
 				<a href="#"><span class="ico-footer-setting"></span></a>
 				<div class="pos-a footer-menu">
 					<ul class="footer-menu-ul">
-						<li><a href="../news/news.html">新闻资讯</a></li>
-						<li><a href="../contact-us/contact-us.html">联系我们</a></li>
+						<li><a href="../../news/news.html">新闻资讯</a></li>
+						<li><a href="../../contact-us/contact-us.html">联系我们</a></li>
 					</ul>
 				</div>
 				</li>
@@ -62,5 +62,17 @@
 	</div>
 	<!--footer end-->
 </div>
+<script type="text/javascript">
+	var lis=$(".sec-imgBox");
+	for(var i = 0;i<lis.length;i++){
+		if(i%2 == 0){
+			lis.eq(i).css({"right":"1000px"});
+			lis.eq(i).animate({"right":"0px"},200*i+1000,"swing");
+		}else{
+			lis.eq(i).css({"left":"1000px"});
+			lis.eq(i).animate({"left":"0px"},200*i+1000,"swing");
+		}
+	}
+</script>
 </body>
 </html>
