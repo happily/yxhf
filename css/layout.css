@@ -24,7 +24,7 @@ html,body {height:100%; width:100%;margin:0; padding:0;}
 .splashdiv .splash{width:320px;height:320px;overflow:hidden;position:absolute;top:50%;left:50%;margin-left:-160px;margin-top:-160px;}
 #div_logo{width:100%; background: #dfdfdf;background: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#ffffff));background: -moz-linear-gradient(top,  #dfdfdf,  #ffffff);filter:  progid: DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ffffff'); margin:0 auto;text-align:center;height:25%; position:relative;border-bottom:7px solid #999999;}
 #div_logo .logo_img{width:320px;height:179px;text-align:left;overflow:hidden;position:absolute;top:50%;left:50%;margin-left:-160px;margin-top:-98px;}
-.main{margin:78px 0;}
+.main{margin:0;}
 /*header*/
 /*.lay_topfixed{position: relative;width: 100%;z-index:400; height:40px;}
 .lay_topfixed .lay_topfixed_inner{left:0;position: fixed;top: 0;width: 100%;}
@@ -66,7 +66,7 @@ html,body {height:100%; width:100%;margin:0; padding:0;}
 .btn-right{right:10px;background:url(../images/icon-header-setting.jpg) no-repeat; height:55px; width:90px; border:none;}
 /*img*/
 img {
-       width:100%; max-width:2580px; 
+       width:100%; max-width:100%; 
 	   margin:0 auto; display:block;
        height: auto;
        width: auto\9; /* ie8 */

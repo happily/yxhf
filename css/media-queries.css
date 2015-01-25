@@ -10,5 +10,21 @@
 .srollPic img{width:640px; height:945px;}
 .space-panel .sec-imgBox{ width:100%;}
 .sec-imgTitle{ height:40px; line-height:40px; font-size:20px;}
+.sec-imgTitle span{font-size:20px;}
 .sec-sortList li{width:100%}
 }
+/* 超小屏幕（手机，小于 768px） */
+
+/* 小屏幕（平板，大于等于 768px） */
+@media screen and (min-width: 768px) {
+	
+	}
+	
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 768px) and (max-width: 991px) {
+	}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 992px) and (max-width: 1199px) {
+	}
+@media (min-width: 1200px) {
+	}
