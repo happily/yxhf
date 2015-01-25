@@ -2,7 +2,7 @@
 $(document).ready(function(){
   $("#footerMenu").click(function(){
   $(".footer-menu").toggle();
-  return false;
+ 
   });
 });
 
