@@ -1,38 +1,24 @@
 /* CSS Document */
 @media screen and (max-width: 480px) {
-.header .title,.sec-imgTitle{
-    font-size:20px;
-}
 .splash-bg img{width:638px; height:617px;}
 .space-panel .sec-imgBox{ width:100%;}
-.sec-imgTitle{ height:40px; line-height:40px; font-size:20px;}
-.sec-imgTitle span{font-size:20px;}
 .sec-sortList li{width:100%}
-.footer{height:52px;}
 .bottombar{position:relative;z-index:10000;}
 .f_ul_list{text-align:center;}
-.f_ul_list li{height:52px;}
 .footer-menu-ul li{width:100%;}
-.ico-footer-home{ margin-top:1px;}
-.ico-footer-setting{margin-top:1px;}
-.ico-footer-back{margin-top:1px;}
 .indexUl{ padding:50px 0;}
-.contact-bg img{ width:640px; height:945px;}
-.footer-menu{ bottom:52px;}
-.sec-titleBox-space h3{ font-size:22px;}
 .sec-titleBox{padding: 30px 0 35px;}
-.indexUl li a{font-size:26px;}
+.indexUl li a{font-size:13px;}
 }
-/* ��С��Ļ���ֻ�С�� 768px�� */
 
-/* С��Ļ��ƽ�壬���ڵ��� 768px�� */
+/*768px*/
 @media screen and (min-width: 768px) {
 	
-/* �е���Ļ��������ʾ�������ڵ��� 992px�� */
+/*992px*/
 @media (min-width: 768px) and (max-width: 991px) {
 	
 	}
-/* ����Ļ����������ʾ�������ڵ��� 1200px�� */
+/*1200px�� */
 @media (min-width: 992px) and (max-width: 1199px) {
 	}
 @media (min-width: 1200px) {
